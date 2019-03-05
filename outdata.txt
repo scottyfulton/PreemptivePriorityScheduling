@@ -1,0 +1,180 @@
+How many second(s) delay between time units; 0 - 9 seconds?: 0
+
+# of jobs: 5
+
+Job: 0
+Arrival: 0
+Priority: 1
+cpuTime: 2
+
+Job: 1
+Arrival: 1
+Priority: 8
+cpuTime: 1
+
+Job: 2
+Arrival: 5
+Priority: 2
+cpuTime: 7
+
+Job: 3
+Arrival: 6
+Priority: 8
+cpuTime: 6
+
+Job: 4
+Arrival: 7
+Priority: 5
+cpuTime: 4
+
+Job Chart
+#  Ar Pr CT CL CD NN
+0  0  1  2  2  0  0
+1  1  8  1  1  0  0
+2  5  2  7  7  0  0
+3  6  8  6  6  0  0
+4  7  5  4  4  0  0
+
+
+-----------------
+|   Time = 0   |
+-----------------
+job: 0 arrives
+job: 0 runs
+
+-----------------
+|   Time = 1   |
+-----------------
+job: 1 arrives
+job: 0 runs
+
+-----------------
+|   Time = 2   |
+-----------------
+job: 0 night night
+Context switch
+job: 1 runs
+
+-----------------
+|   Time = 3   |
+-----------------
+job: 1 night night
+Empty CPU cycle
+
+-----------------
+|   Time = 4   |
+-----------------
+Empty CPU cycle
+
+-----------------
+|   Time = 5   |
+-----------------
+job: 2 arrives
+job: 2 runs
+
+-----------------
+|   Time = 6   |
+-----------------
+job: 3 arrives
+job: 2 runs
+
+-----------------
+|   Time = 7   |
+-----------------
+job: 4 arrives
+job: 2 runs
+
+-----------------
+|   Time = 8   |
+-----------------
+job: 2 runs
+
+-----------------
+|   Time = 9   |
+-----------------
+job: 2 runs
+
+-----------------
+|   Time = 10   |
+-----------------
+job: 2 runs
+
+-----------------
+|   Time = 11   |
+-----------------
+job: 2 runs
+
+-----------------
+|   Time = 12   |
+-----------------
+job: 2 night night
+Context switch
+job: 4 runs
+
+-----------------
+|   Time = 13   |
+-----------------
+job: 4 runs
+
+-----------------
+|   Time = 14   |
+-----------------
+job: 4 runs
+
+-----------------
+|   Time = 15   |
+-----------------
+job: 4 runs
+
+-----------------
+|   Time = 16   |
+-----------------
+job: 4 night night
+Context switch
+job: 3 runs
+
+-----------------
+|   Time = 17   |
+-----------------
+job: 3 runs
+
+-----------------
+|   Time = 18   |
+-----------------
+job: 3 runs
+
+-----------------
+|   Time = 19   |
+-----------------
+job: 3 runs
+
+-----------------
+|   Time = 20   |
+-----------------
+job: 3 runs
+
+-----------------
+|   Time = 21   |
+-----------------
+job: 3 runs
+
+-----------------
+|   Time = 22   |
+-----------------
+job: 3 night night
+***Queue empty***
+
+---------------------------
+|    Turn Around Times    |
+---------------------------
+job n Tat: T(f) - T(i) = xx
+---------------------------
+job 0 Tat:  2  -  0  =  2
+job 1 Tat:  3  -  1  =  2
+job 2 Tat:  12  -  5  =  7
+job 3 Tat:  22  -  6  =  16
+job 4 Tat:  16  -  7  =  9
+---------------------------
+      AVG TaT: 7.2
+---------------------------
+
